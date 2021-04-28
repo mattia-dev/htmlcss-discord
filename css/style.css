@@ -4,3 +4,38 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.page-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 625px;
+    background-image: url('../img/jumbo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    height: 80px;
+    line-height: 80px;
+}
+
+li {
+    display: inline-block;
+}
