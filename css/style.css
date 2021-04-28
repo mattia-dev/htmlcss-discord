@@ -30,9 +30,12 @@ body {
 .small-button {
     border-radius: 30px;
     padding: 5px 15px 7px 15px;
-    background-color: white;
     font-size: 14px;
     font-weight: 500;
+}
+
+header .small-button {
+    background-color: white;
 }
 
 .big-button {
@@ -82,14 +85,18 @@ nav {
 }
 
 li {
+    list-style: none;
+}
+
+header li {
     display: inline-block;
     padding: 0 19px;
     font-weight: 700;
 }
 
-.nav-menu li:hover {
+.nav-menu li:hover, footer li:hover {
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 2;
 }
 
 .jumbo {
@@ -213,4 +220,89 @@ main .block img {
     color: white;
     background-color: #7289da;
     margin: 35px 450px 0 450px;
+}
+
+footer {
+    /* height: 635px; */
+    background-color: #23272a;
+}
+
+footer > .container {
+    padding: 80px 0 0 0;
+}
+
+.column {
+    /* height: 400px; */
+    margin-bottom: 40px;
+}
+
+.big-column {
+    width: calc(50% - (50% / 3));
+}
+
+.small-column {
+    width: calc(50% / 3);
+}
+
+[class^="footer-title"] {
+    color: #7289da;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer-title-big {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+footer li {
+    font-size: 15px;
+    color: white;
+    padding: 3px 0;
+}
+
+.languages {
+    color: white;
+    font-size: 14px;
+    padding: 12px 0 20px 0;
+}
+
+.languages > img {
+    height: 14px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.languages span {
+    line-height: 14px;
+    vertical-align: middle;
+}
+
+.socials > img {
+    margin-right: 25px;
+    vertical-align: middle;
+}
+
+.resize-image {
+    width: 24px;
+}
+
+.resize-image-2 {
+    width: 32px;
+}
+
+.lower-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lower-section {
+    border-top: 1px solid #7289da;
+    padding: 35px 0 50px 0;
+}
+
+footer .small-button {
+    color: white;
+    background-color: #7289da;
+    float: right;
 }
