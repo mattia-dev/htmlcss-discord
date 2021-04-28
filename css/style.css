@@ -87,6 +87,11 @@ li {
     font-weight: 700;
 }
 
+.nav-menu li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
 .jumbo {
     height: 545px;
     position: relative;
@@ -103,14 +108,16 @@ li {
     padding-bottom: 40px;
 }
 
-.image-title {
+.title {
     font-size: 56px;
     font-weight: 700; 
+    line-height: 66px;
 }
 
-.image-text {
+.text {
     padding: 30px 0;
     font-size: 19px;
+    line-height: 32px;
 }
 
 .image-buttons > .big-button {
@@ -127,4 +134,43 @@ li {
     background-color: #23272a;
     color: white;
     margin-left: 10px;
+}
+
+.main-image {
+    width: 68%;
+    height: 440px;
+    margin: 125px 0;
+    position: relative;
+}
+
+.main-text {
+    width: 32%;
+    height: 440px;
+    margin: 180px 0 60px 0;
+}
+
+.main-title {
+    font-size: 46px;
+    font-weight: 700; 
+    line-height: 56px;
+}
+
+.filter-grey-1, .filter-grey-3 {
+    filter: invert(100%) sepia(69%) saturate(115%) hue-rotate(146deg) brightness(119%) contrast(93%);
+    position: relative;
+    top: 10px;
+}
+
+.filter-grey-2 {
+    transform: rotate(180deg);
+    filter: invert(100%) sepia(69%) saturate(115%) hue-rotate(146deg) brightness(119%) contrast(93%);
+}
+
+.row-2 {
+    background-color: #f6f6f6;;
+}
+
+.row-2 img {
+    position: absolute;
+    right: 0;
 }
