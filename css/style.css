@@ -6,10 +6,10 @@
 }
 
 body {
-
+    font-family: 'Palanquin Dark', sans-serif;
 }
 
-.clearfix {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -19,9 +19,10 @@ body {
     float: left;
 }
 
-.page-width {
+.container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 header {
@@ -33,9 +34,41 @@ header {
 
 nav {
     height: 80px;
+}
+
+.nav-logo > img {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.nav-logo, .nav-button {
+    width: 25%;
+    height: 100%;
+}
+
+.nav-menu {
+    width: 50%;
+    text-align: center;
     line-height: 80px;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-button > button {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    transform: translate(0, -50%);
 }
 
 li {
     display: inline-block;
+    padding: 0 19px;
+}
+
+.blocco {
+    height: 1200px;
+    background-color: red;
 }
